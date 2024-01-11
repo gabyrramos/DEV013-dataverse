@@ -10,6 +10,7 @@ const peliculas = [
       fechaPublicacion: "17 de diciembre de 2003",
       premioGanado: "11 premios de la Academia, incluyendo Mejor Película."
     }
+    //intento #1
   },
   {
     id: 2,
