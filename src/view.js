@@ -1,18 +1,39 @@
 export const renderItems = (data) => {
-  console.log(data)
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
-  //Crear Funciones a usar
+   // Obtén el contenedor por su ID
+   const contenedor = document.getElementById('contenedor');
 
-  //Crear una funcion de parrafo 
+   // Crear un elemento p (párrafo)
+   const nuevoParrafo = document.createElement('p');
+   
+   // Agregar texto al nuevo párrafo con datos dinámicos
+   nuevoParrafo.textContent = 'Epopeya';
+ 
+   // Agregar el párrafo al contenedor
+   contenedor.appendChild(nuevoParrafo);
+ 
+   // Retornar el contenedor actualizado
+   return contenedor;
+};
 
-  function crearParrafo(contenedor){
-    //Creamos un elemento p = parrafo
-    var nuevoParrafo = document.createElement('p');//creamos el elemento
-    //Agregamos texto al nuevo parrafo 
-    nuevoParrafo.textContent = 'Epopeya fantástica basada en la obra de J.R.R. Tolkien.';
-    //Agregamos el parrafo al contenedor 
-    contenedor.appendChild(nuevoParrafo);
-  }
+function crearParrafo(contenedor) {
+  const contenedor = document.getElementById('contenedor');
 
-  return 'example';
+  // Crear un elemento p (párrafo)
+  const nuevoParrafo = document.createElement('p');
+  
+  // Agregar texto al nuevo párrafo con datos dinámicos
+  nuevoParrafo.textContent = 'Epopeya';
+
+  // Agregar el párrafo al contenedor
+  contenedor.appendChild(nuevoParrafo);
+
+  // Retornar el contenedor actualizado
+  return contenedor;
+//   // Creamos un elemento p = párrafo
+//   const nuevoParrafo = document.createElement('p');
+//   // Agregamos texto al nuevo párrafo
+//   nuevoParrafo.textContent = "Epopeya";
+//   // Agregamos el párrafo al contenedor
+//   contenedor.appendChild(nuevoParrafo);
+//   return nuevoParrafo;
 };

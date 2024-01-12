@@ -1,13 +1,12 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
+import { crearParrafoDinamico } from './view.js';
 
-import data from './data/dataset.js';
+import data from './data/data.js';
 
-//Llamamos funciones desde view 
 
-//Creamos una variable para obtener el contenido de p
-var contenedor= document.getElementById('contenedor'); 
-//Llamamos a la funcion
-crearParrafo(contenedor);
+// Llamamos a la función renderItems y pasamos los datos
+var contenedor = document.getElementById('contenedor');
 
-console.log(example, renderItems(data), data);
+// Imprimimos el contenedor actualizado (puedes omitir esto si no necesitas imprimirlo)
+console.log(contenedorActualizado);
