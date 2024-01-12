@@ -5,6 +5,7 @@ const peliculas = [
     taquillera: true,
     ingresos: 1118888979,
     shortDescription: "Epopeya fantástica basada en la obra de J.R.R. Tolkien.",
+    image: <img src="imagenes/señor-de-los-anillos.jpg" alt=""></img>,
     facts: {
       taquillera: true,
       fechaPublicacion: "17 de diciembre de 2003",
@@ -18,6 +19,7 @@ const peliculas = [
     taquillera: true,
     ingresos: 2208208395,
     shortDescription: "Romance dramático del trágico hundimiento del Titanic.",
+    image: <img src="imagenes/titanic.jpg" alt=""></img>,
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de diciembre de 1997",
@@ -30,6 +32,7 @@ const peliculas = [
     taquillera: true,
     ingresos: 1049746767,
     shortDescription: "Aventura con dinosaurios creados genéticamente.",
+    image: <img src="imagenes/jurassic-park.webp.jpg" alt=""></img>,
     facts: {
       taquillera: true,
       fechaPublicacion: "11 de junio de 1993",
