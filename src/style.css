@@ -1,0 +1,22 @@
+html{
+  background-color: black;
+}
+
+dd,
+dt{
+    font-family:'Cambria';
+    font-size: large;
+    color: white;
+    left: 15px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 100px;
+    grid-auto-rows: 200px;
+}
+
+h1{
+    color:white;
+}
