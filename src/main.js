@@ -1,13 +1,18 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
-import data from './data/dataset.js';
+import data from './data/datamovies.js';
 
-//Llamamos funciones desde view 
+
+// Llamamos a la función renderItems y pasamos los datos
+const showr = renderItems(data);
+const contenedor = document.getElementById('contenedor');
+contenedor.innerHTML=showr;
 
 //Creamos una variable para obtener el contenido de p
-const contenedor= document.getElementById('contenedor'); 
+var contenedor= document.getElementById('contenedor'); 
 //Llamamos a la funcion
 crearParrafo(contenedor);
 
-console.log(example, renderItems(data), data);
+// Imprimimos el contenedor actualizado (puedes omitir esto si no necesitas imprimirlo)
+//console.log(contenedorActualizado);
