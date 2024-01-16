@@ -1,18 +1,14 @@
 export const renderItems = (data) => {
-   // Obtén el contenedor por su ID
-  const contenedorParrafo = document.createElement('div');
-  
-   // Crear un elemento p (párrafo)
-  const nuevoParrafo = document.createElement('p');
-   
-  // Agregar texto al nuevo párrafo con datos dinámicos
-  nuevoParrafo.textContent = 'Epopeya';
-
-   // Agregar el párrafo al contenedor
-  contenedorParrafo.appendChild(nuevoParrafo);
- 
+  let contenedor = "";
+  data.forEach((movies) => {
+    contenedor +=  `
+    <dl itemscope itemtype="MOVIES">
+    <dt>Nombre:</dd>
+    <dd itemprop = "name">${movies.name}</dd>
+   </dl> `
+  });
   // Retornar el contenedor actualizado
-  return contenedorParrafo;
+  return contenedor;
 };
 
 // function crearParrafo(contenedor) {
