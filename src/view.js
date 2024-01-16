@@ -5,6 +5,12 @@ export const renderItems = (data) => {
     <dl itemscope itemtype="MOVIES">
     <dt>Nombre:</dd>
     <dd itemprop = "name">${movies.name}</dd>
+    <dt>Descripción:</dd>
+    <dd itemprop = "description">${movies.shortDescription}</dd>
+    <dt>Año de publicación:</dd>
+    <dd itemprop = "datos_importantes">${movies.facts.fechaPublicacion}</dd>
+    <dt>Premios Ganados:</dd>
+    <dd itemprop = "datos_importantes">${movies.facts.premioGanado}</dd>
    </dl> `
   });
   // Retornar el contenedor actualizado
