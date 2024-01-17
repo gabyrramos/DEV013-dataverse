@@ -20,7 +20,13 @@ h1{
     color:white;
     font-family:fantasy;
     font-size: 100px;
-    height: 100px;
+    height: 150px;
     font-weight: 100px;
     text-align: center;
+}
+
+img{
+    height: 150 px;
+    /* width: 100px; */
+    max-width: 100%;
 }

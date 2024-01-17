@@ -5,7 +5,7 @@ export default [
     taquillera: true,
     ingresos: 1118888979,
     shortDescription: "Epopeya fantástica basada en la obra de J.R.R. Tolkien.",
-    //image: <img src="imagenes/señor-de-los-anillos.jpg" alt=""></img>,
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/se%C3%B1or-de-los-anillos.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "17 de diciembre de 2003",
@@ -19,7 +19,7 @@ export default [
     taquillera: true,
     ingresos: 2208208395,
     shortDescription: "Romance dramático del trágico hundimiento del Titanic.",
-    //image: <img src="imagenes/titanic.jpg" alt=""></img>,
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/titanic.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de diciembre de 1997",
@@ -32,7 +32,7 @@ export default [
     taquillera: true,
     ingresos: 1049746767,
     shortDescription: "Aventura con dinosaurios creados genéticamente.",
-    //image: <img src="imagenes/jurassic-park.webp.jpg" alt=""></img>,
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/titanic.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "11 de junio de 1993",
@@ -45,6 +45,7 @@ export default [
     taquillera: false,
     ingresos: 245066411,
     shortDescription: "Clásico del crimen dirigido por Francis Ford Coppola.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/el-padrino.jpeg",
     facts: {
       taquillera: false,
       fechaPublicacion: "24 de marzo de 1972",
@@ -57,6 +58,7 @@ export default [
     taquillera: true,
     ingresos: 974755371,
     shortDescription: "Primera entrega de la saga de Harry Potter.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/harry-potter-y-la-piedra-filosofal.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "10 de noviembre de 2001",
@@ -69,6 +71,7 @@ export default [
     taquillera: true,
     ingresos: 678226566,
     shortDescription: "Drama que sigue la vida extraordinaria de Forrest Gump.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/forret-gump.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "6 de julio de 1994",
@@ -81,6 +84,7 @@ export default [
     taquillera: true,
     ingresos: 2787965087,
     shortDescription: "Épica de ciencia ficción que explora el planeta Pandora.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/avatar.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de diciembre de 2009",
@@ -93,6 +97,7 @@ export default [
     taquillera: false,
     ingresos: 465366949,
     shortDescription: "Película de acción y ciencia ficción con el icónico Neo.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/avatar.jpg",
     facts: {
       taquillera: false,
       fechaPublicacion: "31 de marzo de 1999",
@@ -105,6 +110,7 @@ export default [
     taquillera: false,
     ingresos: 448927588,
     shortDescription: "Musical romántico ambientado en Los Ángeles.",
+    image: "Imagenes/La_La_Land.webp",
     facts: {
       taquillera: false,
       fechaPublicacion: "9 de diciembre de 2016",
@@ -117,6 +123,7 @@ export default [
     taquillera: true,
     ingresos: 1852587115,
     shortDescription: "Aventuras del superhéroe Spider-Man en el multiverso.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/spider-man-sin-camino-a-casa.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "13 de diciembre de 2021",
@@ -129,6 +136,7 @@ export default [
     taquillera: true,
     ingresos: 1004558444,
     shortDescription: "Batman se enfrenta al Joker en una ciudad en caos.",
+    image: "Imagenes/Batman_el_Caballero_de_la_Noche.webp",
     facts: {
       taquillera: true,
       fechaPublicacion: "14 de julio de 2008",
@@ -141,6 +149,7 @@ export default [
     taquillera: true,
     ingresos: 792910554,
     shortDescription: "Amistad entre un niño y un extraterrestre.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/et-el-extraterrestre.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "11 de junio de 1982",
@@ -153,6 +162,7 @@ export default [
     taquillera: true,
     ingresos: 677471339,
     shortDescription: "Exploración espacial en busca de un nuevo hogar para la humanidad.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/interstellar.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "7 de noviembre de 2014",
@@ -165,6 +175,7 @@ export default [
     taquillera: false,
     ingresos: 321365567,
     shortDescription: "Drama histórico basado en la vida de Oskar Schindler.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/la-red-social.jpeg",
     facts: {
       taquillera: false,
       fechaPublicacion: "15 de diciembre de 1993",
@@ -177,6 +188,7 @@ export default [
     taquillera: true,
     ingresos: 782636033,
     shortDescription: "Comedia de superhéroes con el irreverente Deadpool.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/deadpool.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "12 de febrero de 2016",
@@ -189,6 +201,7 @@ export default [
     taquillera: true,
     ingresos: 940335536,
     shortDescription: "Aventura animada en el océano en busca de un pez desaparecido.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/buscando-a-nemo.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "30 de mayo de 2003",
@@ -201,6 +214,7 @@ export default [
     taquillera: true,
     ingresos: 829895144,
     shortDescription: "Thriller de ciencia ficción que explora los sueños y la realidad.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/inception.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "8 de julio de 2010",
@@ -213,6 +227,7 @@ export default [
     taquillera: true,
     ingresos: 821847012,
     shortDescription: "Historia de la superheroína Wonder Woman de DC Comics.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/wonder-woman.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "15 de mayo de 2017",
@@ -225,6 +240,7 @@ export default [
     taquillera: true,
     ingresos: 1066969703,
     shortDescription: "Aventuras de juguetes enfrentándose al abandono.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/toy-story.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de junio de 2010",
@@ -237,6 +253,7 @@ export default [
     taquillera: true,
     ingresos: 1656943394,
     shortDescription: "Clásico animado de Disney que sigue la vida del león Simba.",
+    image: "Imagenes/Lion_king_1.webp",
     facts: {
       taquillera: true,
       fechaPublicacion: "15 de junio de 1994",
@@ -249,6 +266,7 @@ export default [
     taquillera: false,
     ingresos: 174801324,
     shortDescription: "Comedia dramática dirigida por Wes Anderson.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/gran-hotel-budapest.jpg",
     facts: {
       taquillera: false,
       fechaPublicacion: "6 de febrero de 2014",
@@ -261,6 +279,7 @@ export default [
     taquillera: true,
     ingresos: 807082196,
     shortDescription: "Película animada de Pixar que celebra el Día de los Muertos.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/coco.jpeg",
     facts: {
       taquillera: true,
       fechaPublicacion: "27 de octubre de 2017",
@@ -273,6 +292,7 @@ export default [
     taquillera: false,
     ingresos: 224920315,
     shortDescription: "Drama biográfico sobre la creación de Facebook.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/la-red-social.jpeg",
     facts: {
       taquillera: false,
       fechaPublicacion: "1 de octubre de 2010",
@@ -285,6 +305,7 @@ export default [
     taquillera: true,
     ingresos: 623722818,
     shortDescription: "Comedia animada sobre un ratón que sueña con ser chef.",
+    image: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/908b80f4cefe0607506525ac9d112df1b7a9b26d/Imagenes/ratatouille.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "22 de junio de 2007",
