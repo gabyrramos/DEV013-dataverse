@@ -1,7 +1,7 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
-import data from './data/dataset.js';
+import data from './data/datamovies.js';
 
 
 /// Llamamos a la función renderItems y pasamos los datos

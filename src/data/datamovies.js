@@ -1,11 +1,11 @@
-const peliculas = [
+export default [
   {
     id: 1,
     name: "El Señor de los Anillos: El retorno del Rey",
     taquillera: true,
     ingresos: 1118888979,
     shortDescription: "Epopeya fantástica basada en la obra de J.R.R. Tolkien.",
-    imageUrl: "https://github.com/gabyrramos/DEV013-dataverse/blob/f34c8aa89f1e86bbd947c9615aef6a68392cdf6c/Imagenes/se%C3%B1or-de-los-anillos.jpg",
+    imageUrl: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/f34c8aa89f1e86bbd947c9615aef6a68392cdf6c/Imagenes/señor-de-los-anillos.jpg",
     facts: {
       taquillera: true,
       fechaPublicacion: "17 de diciembre de 2003",
