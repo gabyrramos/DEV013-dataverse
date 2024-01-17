@@ -1,0 +1,26 @@
+html{
+    background-color: black;
+  }
+  
+  dd,dt{
+      font-family:'Cambria';
+      font-size: large;
+      color: white;
+  }
+  
+  .wrapper{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 100px;
+      grid-auto-rows: 200px;
+  }
+  
+  h1{
+      color:white;
+      font-family:fantasy;
+      font-size: 100px;
+      height: 100px;
+      font-weight: 100px;
+      text-align: center;
+  }
+
