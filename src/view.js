@@ -7,7 +7,7 @@ export const renderItems = (data) => {
     contenedor +=  `
     <li><dl itemscope itemtype="MOVIES">
     <dd itemprop = "imagen">
-    <img class = "img movies" src=${movies.imageURL}>
+    <img class = "img_movies" src=${movies.imageUrl}>
     </dd>
     <dt>Nombre:</dd>
     <dd itemprop = "name">${movies.name}</dd>

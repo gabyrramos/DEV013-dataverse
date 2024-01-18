@@ -13,14 +13,33 @@ html{
       grid-template-columns: repeat(3,1fr);
       grid-gap: 100px;
       grid-auto-rows: 200px;
+      margin: 50px;
   }
   
   h1{
       color:white;
       font-family:fantasy;
       font-size: 100px;
-      height: 100px;
+      height: 150px;
       font-weight: 100px;
       text-align: center;
   }
 
+
+img:hover {
+    -webkit-transform: rotateY(360deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+/*.img_movies {
+height: 150 px;
+width: 100px;
+opacity: 0;
+}
+*/
+.wrapper:hover dd{
+    visibility: visible;
+    opacity: 1;
+}
