@@ -6,7 +6,9 @@ export const renderItems = (data) => {
   data.forEach((movies) => {
     contenedor +=  `
     <li><dl itemscope itemtype="MOVIES">
-    <img src=${movies.imageUrl} alt="pelicula 1" />
+    <dd itemprop = "imagen">
+    <img class = "img_movies" src=${movies.imageUrl}>
+    </dd>
     <dt>Nombre:</dd>
     <dd itemprop = "name">${movies.name}</dd>
     <dt>Descripción:</dd>
