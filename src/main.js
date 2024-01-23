@@ -12,9 +12,5 @@ contenedor.innerHTML = showr;
 
 
 
-const lista = renderItems(movies);
-const unorderedList = document.getElementById('root');
-unorderedList.innerHTML = lista;
-
 
 //le paso la data que va a recorrer

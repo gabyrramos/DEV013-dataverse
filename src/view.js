@@ -7,21 +7,29 @@ export const renderItems = (data) => {
   let contenedor = "";
   data.forEach((movies) => {
     contenedor +=  `
-
-    <li><dl itemscope itemtype="MOVIES">
-    <dd itemprop = "imagen">
-    <img class = "img_movies" src=${movies.imageUrl}>
-    </dd>
-    <dt>Nombre:</dd>
-    <dd itemprop = "name">${movies.name}</dd>
-    <dt>Descripción:</dd>
-    <dd itemprop = "description">${movies.shortDescription}</dd>
-    <dt>Premios Ganados:</dd>
-    <dd itemprop = "datos_importantes">${movies.facts.premioGanado}</dd>
-   </dl></li>`
+    <div class = "wrapper">
+     <div class="item-container">
+       <div class="movie-info">
+          <div class = "imagen">
+           <dd itemprop = "imagen">
+           <img class = "img_movies" src=${movies.imageUrl}>
+            </dd>
+          </div>
+         <div class = "atras">
+         <dl itemscope itemtype="MOVIES">
+         <dt>Nombre:</dt>
+         <dd itemprop="name">${movies.name}</dd>
+         <dt>Descripción:</dt>
+         <dd itemprop="description">${movies.shortDescription}</dd>
+         <dt>Premios Ganados:</dt>
+         <dd itemprop="datos_importantes">${movies.facts.premioGanado}</dd>
+         </dl></div>
+       </div>
+      </div>
+    </div>`
 
   });
-  
+ 
   // Retornar el contenedor actualizado
   return contenedor;
   
