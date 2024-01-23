@@ -73,3 +73,36 @@ ul{
     list-style: none;
     padding: 0;
 }
+
+label[for="categorias"],
+label[for="nombre"]{
+    font-family: 'Cambria';
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    }
+
+label[for="nombre"]{
+    margin-left: 400px
+    }
+
+select{
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+}
+
+footer{
+    color: white ;
+    font-size: 80px;
+    width: 100%;
+    height:50px;
+    line-height:50px;
+    bottom:0;
+    left:0; 
+}
+
+.flex-container{
+display: flex;
+}
