@@ -2,7 +2,7 @@
 //para crear los filtros?
 
 export const example = () => {
-  
+
   return 'example';
 };
 
@@ -10,3 +10,14 @@ export const anotherExample = () => {
   return [];
 };
 
+//una funcion para filtrar
+//parametros:data, filterby, como quiero filtrar(facts)
+
+
+
+//una funcion para ordernar
+//
+
+
+
+//filtrar por valor que usuario le va a dar 

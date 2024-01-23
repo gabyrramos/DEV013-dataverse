@@ -9,11 +9,33 @@
     <header>
       <h1>MOVIES</h1>
     </header>
+    <div class="flex-container">
+      <label for="categorias">Seleccione categorias</label>
+      <select data-testid="select-filter" name="genero">
+      <option value="accion">Acción</option>
+      <option value="cienciaficcion" selected>Ciencia Ficción</option>
+      <option value="drama">Drama</option>
+      <option value="romance">Romance</option>
+      <option value="animacion">Animación</option>
+      </select>
+      <label for="nombre">Ordena por nombre</label>
+      <select data-testid="select-sort" name="orden">
+      <option value="asc">A-Z</option>
+      <option value="desc">Z-A</option>
+      </select>
+      </div>
+    <!--main es el contenedor de las imagenes--> 
     <main id="contenedor" class = "wrapper">
-      <div class="imagenDescripcion"> </div>
-  
+      <ul id="root"></ul>
     </main>
-    
+
     <script src="main.js" type="module"></script>
+
+   <footer>
+    <p>Por: Adriana Vargas y Gabriela Ramos</p>
+   </footer>
+    
   </body>
 </html>
+
+
