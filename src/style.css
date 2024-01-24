@@ -105,3 +105,8 @@ footer{
 .flex-container{
 display: flex;
 }
+
+#reset-button{
+    width: 100px;
+    top:0;
+}

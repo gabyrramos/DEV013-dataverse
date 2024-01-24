@@ -1,6 +1,6 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 //para crear los filtros?
-
+import data from './data/datamovies.js';
 export const example = () => {
 
   return 'example';
@@ -45,14 +45,11 @@ export const ordenarNombresZA = (data) => {
 
   return dataOrdenada;
 };
-//una funcion para filtrar
-//parametros:data, filterby, como quiero filtrar(facts)
 
+export const generoMovies = (data,categoriaSeleccionada) => {
+  // Filtra las películas por el género seleccionado
+  let peliculasFiltradas = data.filter(movie=>movie.genero==categoriaSeleccionada)
+  console.log(peliculasFiltradas)
+  return peliculasFiltradas;
+};
 
-
-//una funcion para ordernar
-//
-
-
-
-//filtrar por valor que usuario le va a dar 

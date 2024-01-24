@@ -12,14 +12,16 @@
     <div class="flex-container">
       <label for="categorias">Seleccione categorias</label>
       <select data-testid="select-filter" name="genero">
+      <option value=""></option> 
       <option value="accion">Acción</option>
-      <option value="cienciaficcion" selected>Ciencia Ficción</option>
+      <option value="cienciaficcion">Ciencia Ficción</option>
       <option value="drama">Drama</option>
       <option value="romance">Romance</option>
       <option value="animacion">Animación</option>
       </select>
       <label for="nombre">Ordena por nombre</label>
       <select data-testid="select-sort" name="orden">
+      <option value=""></option> 
       <option value="asc">A-Z</option>
       <option value="desc">Z-A</option>
       </select>
@@ -28,7 +30,7 @@
     <main id="contenedor">
       <ul id="root"></ul>
     </main>
-
+    <button id="reset-button">Resetear Busqueda</button>
     <script src="main.js" type="module"></script>
 
    <footer>
