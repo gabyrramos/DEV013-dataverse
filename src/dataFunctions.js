@@ -22,9 +22,8 @@ export const anotherExample = () => {
 
 //filtrar por valor que usuario le va a dar 
 
-export const filtroGenero = ()=>{
-  const peliculas = document.querySelectorAll('name')
-  const generoSeleccionado = peliculas.value;
-   
-  if (generoSeleccionado === "")
+//export const filtroGenero = (data,filterby, value)=>{
+  //const filtroGenero= data.filter(movies=> genero[filterby]===value);
+  //return filtroGenero
+  
 }
