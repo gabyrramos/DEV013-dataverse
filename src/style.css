@@ -1,26 +1,69 @@
 html{
     background-color: black;
   }
+
+  .item-container{
+    margin: 100px;
+    perspective: 100;
+    -webkit-perspective: 800;
+    perspective: 800;
+  }
+
+  .movie-info{
+    width:400px;
+    height:370px;
+    background-color:#eff1f4;
+    position:relative;
+    transform-style:preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px hsla(59, 100%, 48%, 0.651);
+    -moz-box-shadow: 0px 10px 15px -5px hsla(59, 100%, 48%, 0.651);
+    box-shadow:0px 10px 15px -5px hsla(59, 100%, 48%, 0.651);
+    
   
-  dd,dt{
-      font-family:'Cambria';
-      font-size: large;
-      color: black;
-      transform: rotateY(180deg);
-      -webkit-backface-visibility: hidden;
+  }
+  .imagen, .atras{
+    width: 100%;
+    height:100%;
+    position:absolute;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    
+  }
+
+  .img_movies{
+    width: 360px;
+    height:370px;
+    right: 100px;
+  }
+
+  .atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    color:black;
+    font-family:'Calibria';
+    font-size:large;
+  }
+
+  .item-container:hover .movie-info{
+    transform: rotateY(180deg);
   }
   
   .wrapper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 100px;
-    grid-auto-rows: 200px;
-    margin: 50px;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
+      width: 1100px;
+      display: flex;
+      margin: 50px auto;
+      justify-content: center;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 100px;
+      grid-auto-rows: 200px;
   }
 
+  
   h1{
       color:white;
       font-family:fantasy;
@@ -29,49 +72,6 @@ html{
       font-weight: 100px;
       text-align: center;
   }
-
-
-img:hover {
-    -webkit-transform: rotateY(360deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-}
-
-.img_movies {
-height: 350 px;
-width: 200px;
-}
-*/
-.wrapper:hover dd{
-    visibility: visible;
-    opacity: 1;
-}
-
-#root{
-    padding: 100px;
-    margin-top: 20px;
-    margin-left: 500px;
-    
-}
-
-li{
-    background-color: antiquewhite;
-    width: 400px;
-    height: 210px;
-    padding: 10%;
-    margin-bottom: 10px;
-}
-
-li:hover{
-    transform: rotateY(180deg);
-    transition: .9s ease;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-}
 
 label[for="categorias"],
 label[for="nombre"]{
@@ -93,15 +93,20 @@ select{
 }
 
 footer{
-    color: white ;
-    font-size: 80px;
-    width: 100%;
-    height:50px;
-    line-height:50px;
-    bottom:0;
-    left:0; 
+    font-size: 40px;
+    margin-top:50px;
+    width:100%;
+    height:100px;
+    background-color:white; 
+    
 }
 
 .flex-container{
 display: flex;
+}
+
+#reset-button{
+    width: 180px;
+    font-size:20px;
+  
 }
