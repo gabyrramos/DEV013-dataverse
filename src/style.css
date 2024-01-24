@@ -93,13 +93,12 @@ select{
 }
 
 footer{
-    color: white ;
-    font-size: 80px;
-    width: 100%;
-    height:50px;
-    line-height:50px;
-    bottom:0;
-    left:0; 
+    font-size: 40px;
+    margin-top:50px;
+    width:100%;
+    height:100px;
+    background-color:white; 
+    
 }
 
 .flex-container{
@@ -107,6 +106,7 @@ display: flex;
 }
 
 #reset-button{
-    width: 100px;
-    top:0;
+    width: 180px;
+    font-size:20px;
+  
 }
