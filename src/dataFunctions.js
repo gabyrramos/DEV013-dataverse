@@ -21,3 +21,10 @@ export const anotherExample = () => {
 
 
 //filtrar por valor que usuario le va a dar 
+
+export const filtroGenero = ()=>{
+  const peliculas = document.querySelectorAll('name')
+  const generoSeleccionado = peliculas.value;
+   
+  if (generoSeleccionado === "")
+}
