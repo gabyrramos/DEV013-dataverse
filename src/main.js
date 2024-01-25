@@ -36,6 +36,7 @@ const actualizarVista = () => {
     // Llama a la función generoMovies para obtener las películas según el género
     const peliculasFiltradas = generoMovies(data, categoriaSeleccionada);
     console.log(peliculasFiltradas);
+    return peliculasFiltradas;
   };
 // Agrega eventos de cambio a los selectores
   
@@ -47,4 +48,4 @@ const actualizarVista = () => {
     });
 selectSort.addEventListener('change', actualizarVista);
 selectFilter.addEventListener('change', mostrarPorGenero);
-mostrarPorGenero();
+
