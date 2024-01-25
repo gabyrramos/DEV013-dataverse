@@ -52,4 +52,3 @@ export const generoMovies = (data,categoriaSeleccionada) => {
   console.log(genero)
   return genero; 
 };
-
