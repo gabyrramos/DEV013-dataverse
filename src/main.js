@@ -12,10 +12,11 @@ const contenedor = document.getElementById('contenedor');
 contenedor.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
+let datosOrdenados = data;
 
 // Función para actualizar la vista cuando se cambian los selectores
 const actualizarVista = () => {
-  let datosOrdenados = data; // Inicialmente, usa los datos sin ordenar
+  // Inicialmente, usa los datos sin ordenar
   
   // Verifica la opción seleccionada en el selector de orden
   if (selectSort.value === 'asc') {
@@ -29,28 +30,30 @@ const actualizarVista = () => {
   contenedor.innerHTML = showo;
 };
   
-<<<<<<< HEAD
 const mostrarPorGenero = () => {
   // Obtén el valor seleccionado del selector
   const categoriaSeleccionada = selectFilter.value;
-  //console.log(categoriaSeleccionada);
+  console.log(categoriaSeleccionada);
   // Llama a la función generoMovies para obtener las películas según el género
-  const peliculasFiltradas = generoMovies(data, categoriaSeleccionada);
-  console.log(peliculasFiltradas);
+  const peliculasFiltradas = generoMovies(data, categoriaSeleccionada)
+  
+  
+  if (selectSort.value === 'asc') {
+    datosOrdenados = ordenarNombresAZ(peliculasFiltradas);
+  } else if (selectSort.value === 'desc') {
+    datosOrdenados = ordenarNombresZA(peliculasFiltradas);
+  }
+  
+  const showo = renderItems(peliculasFiltradas);
+  contenedor.innerHTML = showo;
 
-  return peliculasFiltradas;
+  
+
+  const showp = renderItems(datosOrdenados);
+  contenedor.innerHTML = showp;
+  
 };
-=======
-  const mostrarPorGenero = () => {
-    // Obtén el valor seleccionado del selector
-    const categoriaSeleccionada = selectFilter.value;
-    console.log(categoriaSeleccionada);
-    // Llama a la función generoMovies para obtener las películas según el género
-    const peliculasFiltradas = generoMovies(data, categoriaSeleccionada);
-    console.log(peliculasFiltradas);
-    return peliculasFiltradas;
-  };
->>>>>>> 5fd4ba77fde91acd5dff481a10489034da8e16e9
+
 // Agrega eventos de cambio a los selectores
   
 const reset = document.getElementById("reset-button");
