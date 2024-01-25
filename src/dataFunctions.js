@@ -12,7 +12,7 @@ export const anotherExample = () => {
 
 export const ordenarNombresAZ = (data) => {
   // Ordenar el array de objetos 'data' por el nombre en orden alfabético (A-Z)
-  const dataOrdenada = data.slice().sort((a, b) => {
+   const dataOrdenada = data.slice().sort((a, b) => {
     const nombreA = a.name.toUpperCase();
     const nombreB = b.name.toUpperCase();
 
@@ -54,7 +54,14 @@ export const ordenarNombresZA = (data) => {
  
  export const generoMovies = (data,categoriaSeleccionada) => {
   // Filtra las películas por el género seleccionado
+<<<<<<< HEAD
   let peliculasFiltradas = data.filter(movie=>movie.genero==categoriaSeleccionada)
   console.log(peliculasFiltradas)
   return peliculasFiltradas;
 };
+=======
+  const genero = data.filter(movie=>movie.genero===categoriaSeleccionada)
+  console.log(genero)
+  return genero; 
+};
+>>>>>>> 5fd4ba77fde91acd5dff481a10489034da8e16e9

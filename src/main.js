@@ -29,6 +29,7 @@ const actualizarVista = () => {
   contenedor.innerHTML = showo;
 };
   
+<<<<<<< HEAD
 const mostrarPorGenero = () => {
   // Obtén el valor seleccionado del selector
   const categoriaSeleccionada = selectFilter.value;
@@ -39,6 +40,17 @@ const mostrarPorGenero = () => {
 
   return peliculasFiltradas;
 };
+=======
+  const mostrarPorGenero = () => {
+    // Obtén el valor seleccionado del selector
+    const categoriaSeleccionada = selectFilter.value;
+    console.log(categoriaSeleccionada);
+    // Llama a la función generoMovies para obtener las películas según el género
+    const peliculasFiltradas = generoMovies(data, categoriaSeleccionada);
+    console.log(peliculasFiltradas);
+    return peliculasFiltradas;
+  };
+>>>>>>> 5fd4ba77fde91acd5dff481a10489034da8e16e9
 // Agrega eventos de cambio a los selectores
   
 const reset = document.getElementById("reset-button");
