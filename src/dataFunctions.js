@@ -1,6 +1,6 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 //para crear los filtros?
-import data from './data/datamovies.js';
+
 export const example = () => {
 
   return 'example';
