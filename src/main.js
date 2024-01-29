@@ -12,13 +12,14 @@ const contenedor = document.getElementById('contenedor');
 contenedor.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
-let datosOrdenados = [...data];
+
 
 // Función para actualizar la vista cuando se cambian los selectores
 const actualizarVista = () => {
   // Inicialmente, usa los datos sin ordenar
   
   // Verifica la opción seleccionada en el selector de orden
+  let datosOrdenados = data;
   if (selectSort.value === 'asc') {
     datosOrdenados = ordenarNombresAZ(datosOrdenados);
   } else if (selectSort.value === 'desc') {
@@ -32,24 +33,22 @@ const actualizarVista = () => {
   
 const mostrarPorGenero = () => {
   // Obtén el valor seleccionado del selector
+
   const categoriaSeleccionada = selectFilter.value;
   //console.log(categoriaSeleccionada);
   // Llama a la función generoMovies para obtener las películas según el género
   const peliculasFiltradas = generoMovies(data, categoriaSeleccionada)
-  
-  if (selectSort.value === 'asc') {
-    datosOrdenados = ordenarNombresAZ(peliculasFiltradas);
-  } else if (selectSort.value === 'desc') {
-    datosOrdenados = ordenarNombresZA(peliculasFiltradas);
-  }
-  
-  const showo = renderItems(peliculasFiltradas);
-  contenedor.innerHTML = showo;
 
-  const showp = renderItems(datosOrdenados);
-  contenedor.innerHTML = showp;
   
 };
+
+if (selectSort.value === 'asc') {
+    let datosGenero = ordenarNombresAZ(peliculasFiltradas);
+  } else if (selectSort.value === 'desc') {
+    let datosGenero = ordenarNombresZA(peliculasFiltradas);
+  }
+  const showp = renderItems(datosGenero);
+  contenedor.innerHTML = showp  
 
 // Agrega eventos de cambio a los selectores
   
