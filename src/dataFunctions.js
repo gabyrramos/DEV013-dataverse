@@ -1,17 +1,6 @@
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-//para crear los filtros?
-
-
-
-//export const example = () => {
-
-// return 'example';
-//};
-
 export const anotherExample = () => {
   return [];
 };
-
 export const ordenarNombresAZ = (data) => {
   // Ordenar el array de objetos 'data' por el nombre en orden alfabético (A-Z)
   const dataOrdenada = data.slice().sort((a, b) => {
@@ -47,8 +36,6 @@ export const ordenarNombresZA = (data) => {
 
   return dataOrdenada;
 };
-
-
 
 export const generoMovies = (data,categoriaSeleccionada) => {
   // Filtra las películas por el género seleccionado

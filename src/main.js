@@ -12,7 +12,7 @@ const contenedor = document.getElementById('contenedor');
 contenedor.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
-let datosOrdenados = data;
+let datosOrdenados = [...data];
 
 // Función para actualizar la vista cuando se cambian los selectores
 const actualizarVista = () => {
@@ -33,10 +33,9 @@ const actualizarVista = () => {
 const mostrarPorGenero = () => {
   // Obtén el valor seleccionado del selector
   const categoriaSeleccionada = selectFilter.value;
-  console.log(categoriaSeleccionada);
+  //console.log(categoriaSeleccionada);
   // Llama a la función generoMovies para obtener las películas según el género
   const peliculasFiltradas = generoMovies(data, categoriaSeleccionada)
-  
   
   if (selectSort.value === 'asc') {
     datosOrdenados = ordenarNombresAZ(peliculasFiltradas);
@@ -47,8 +46,6 @@ const mostrarPorGenero = () => {
   const showo = renderItems(peliculasFiltradas);
   contenedor.innerHTML = showo;
 
-  
-
   const showp = renderItems(datosOrdenados);
   contenedor.innerHTML = showp;
   
@@ -56,11 +53,12 @@ const mostrarPorGenero = () => {
 
 // Agrega eventos de cambio a los selectores
   
-const reset = document.getElementById("reset-button");
+const reset = document.querySelector('[data-testid="button-clear"]');
 reset.addEventListener('click',function(){
-  selectSort.value = "";
-  selectFilter.value = "";
+  actualizarVista.value = "";
+  mostrarPorGenero.value = "";
   contenedor.innerHTML = showr;
+  
 });
 selectSort.addEventListener('change', actualizarVista);
 selectFilter.addEventListener('change', mostrarPorGenero);
