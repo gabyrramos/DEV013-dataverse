@@ -3,12 +3,14 @@ html{
   }
 
 h1{
-  color:white;
+  color:yellow;
   font-family:fantasy;
   font-size: 100px;
   height: 150px;
   font-weight: 100px;
   text-align: center;
+  background-color: white;
+  border: #fa1543;
   }
 
 .item-container{
@@ -105,7 +107,7 @@ button[data-testid="button-clear"]{
   line-height: 25px;
   }
 
-#contenedor{
+#root{
   display: grid; 
   grid-template-columns: repeat(3,1fr);
   grid-gap: 100px;

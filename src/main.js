@@ -8,7 +8,7 @@ import data from './data/datamovies.js';
 ///Declaramos todas las constantes necesarias a usar
 /// Llamamos a la función renderItems y pasamos los datos
 const showr = renderItems(data);
-const contenedor = document.getElementById('contenedor');
+const contenedor = document.getElementById('root');
 contenedor.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
@@ -23,6 +23,7 @@ const actualizarVista = () => {
     datosOrdenados = ordenarNombresAZ(datosOrdenados);
   } else if (selectSort.value === 'desc') {
     datosOrdenados = ordenarNombresZA(datosOrdenados);
+
   }
   
   // Llama a la función renderItems y actualiza el contenido del contenedor
@@ -41,10 +42,9 @@ const mostrarPorGenero = () => {
     datosOrdenados = ordenarNombresAZ(peliculasFiltradas);
   } else if (selectSort.value === 'desc') {
     datosOrdenados = ordenarNombresZA(peliculasFiltradas);
+  } else { datosOrdenados = peliculasFiltradas
+
   }
-  
-  const showo = renderItems(peliculasFiltradas);
-  contenedor.innerHTML = showo;
 
   const showp = renderItems(datosOrdenados);
   contenedor.innerHTML = showp;
@@ -55,9 +55,12 @@ const mostrarPorGenero = () => {
   
 const reset = document.querySelector('[data-testid="button-clear"]');
 reset.addEventListener('click',function(){
-  actualizarVista.value = "";
-  mostrarPorGenero.value = "";
-  contenedor.innerHTML = showr;
+  console.log("click");
+  selectFilter.selectedIndex = 0;
+  selectSort.selectedIndex = 0;
+  console.log(showr);
+  datosOrdenados = data;
+  contenedor.innerHTML = renderItems(data);
   
 });
 selectSort.addEventListener('change', actualizarVista);
