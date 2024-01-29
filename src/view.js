@@ -1,9 +1,6 @@
 export const renderItems = (data) => {
- 
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   //Crear Funciones a usar
-
-
   let contenedor = "";
   data.forEach((movies) => {
     contenedor +=  `
@@ -17,12 +14,9 @@ export const renderItems = (data) => {
           </div>
          <div class = "atras">
          <dl itemscope itemtype="MOVIES">
-         <dt>Nombre:</dt>
-         <dd itemprop="name">${movies.name}</dd>
-         <dt>Descripción:</dt>
-         <dd itemprop="description">${movies.shortDescription}</dd>
-         <dt>Premios Ganados:</dt>
-         <dd itemprop="datos_importantes">${movies.facts.premioGanado}</dd>
+         <dt>Nombre:</dt><dd itemprop="name">${movies.name}</dd>
+         <dt>Descripción:</dt><dd itemprop="description">${movies.shortDescription}</dd>
+         <dt>Premios Ganados:</dt><dd itemprop="datos_importantes">${movies.facts.premioGanado}</dd>
          </dl></div>
        </div>
       </div>
@@ -37,3 +31,4 @@ export const renderItems = (data) => {
 //falta hacer testings de ul y de nuestra data
 
 //otro componente que renderize lo que quiero mostrar, mi template de lo que voy a imprimir
+

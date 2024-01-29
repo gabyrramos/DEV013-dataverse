@@ -26,18 +26,25 @@
       <option value="asc">A-Z</option>
       <option value="desc">Z-A</option>
       </select>
+      <label for="estadisticas">Estadisticas Premios</label>
+      <select name="estadistica-premios" id="estadistica-premios">
+      <option id="porGenero">Premios por Genero</option>
+      <option id="enTotal">Total premios ganados</option>
+      </select>
       </div>
-      <button id="reset-button">Resetear Busqueda</button> 
+      <div class="centrarboton">
+        <button data-testid="button-clear">Resetear Busqueda</button> 
+      </div>
     <!--main es el contenedor de las imagenes--> 
     <main id="contenedor">
-      <ul id="root"></ul>
+      <ul></ul>
     </main>
-    
-    <script src="main.js" type="module"></script>
 
-   <footer>
+    <script src="main.js" type="module"></script>
+    
+    <footer>
     <p>Copyrigth Adriana Vargas y Gabriela Ramos</p>
-   </footer>
+    </footer>
     
   </body>
 </html>

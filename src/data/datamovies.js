@@ -9,7 +9,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "17 de diciembre de 2003",
-      premioGanado: "11 premios de la Academia, incluyendo Mejor Película."
+      premioGanado: 11
     }
     //intento 
   },
@@ -23,7 +23,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de diciembre de 1997",
-      premioGanado: "14 premios de la Academia, incluyendo Mejor Película."
+      premioGanado: 14
     }
   },
   {
@@ -36,7 +36,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "11 de junio de 1993",
-      premioGanado: "3 premios de la Academia, innovación en efectos visuales."
+      premioGanado: 3
     }
   },
   {
@@ -49,7 +49,7 @@ export default [
     facts: {
       taquillera: false,
       fechaPublicacion: "24 de marzo de 1972",
-      premioGanado: "3 premios de la Academia, incluyendo Mejor Actor (Marlon Brando)."
+      premioGanado: 3
     }
   },
   {
@@ -63,7 +63,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "10 de noviembre de 2001",
-      premioGanado: "3 premios BAFTA."
+      premioGanado: 3
     }
   },
   {
@@ -76,7 +76,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "6 de julio de 1994",
-      premioGanado: "6 premios de la Academia, incluyendo Mejor Película y Mejor Actor (Tom Hanks)."
+      premioGanado: 6
     }
   },
   {
@@ -89,7 +89,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de diciembre de 2009",
-      premioGanado: "3 premios de la Academia, incluyendo Mejor Dirección de Arte."
+      premioGanado: 3
     }
   },
   {
@@ -102,7 +102,7 @@ export default [
     facts: {
       taquillera: false,
       fechaPublicacion: "31 de marzo de 1999",
-      premioGanado: "4 premios de la Academia, principalmente en efectos visuales y edición de sonido."
+      premioGanado: 4
     }
   },
   {
@@ -115,7 +115,7 @@ export default [
     facts: {
       taquillera: false,
       fechaPublicacion: "9 de diciembre de 2016",
-      premioGanado: "6 premios de la Academia, incluyendo Mejor Director y Mejor Actriz (Emma Stone)."
+      premioGanado: 6
     }
   },
   {
@@ -128,7 +128,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "13 de diciembre de 2021",
-      premioGanado: "Todavía no se han anunciado los premios al momento de mi conocimiento (2022)."
+      premioGanado: 1
     }
   },
   {
@@ -141,7 +141,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "14 de julio de 2008",
-      premioGanado: "2 premios de la Academia, incluyendo Mejor Actor de Reparto (Heath Ledger)."
+      premioGanado: 2
     }
   },
   {
@@ -154,7 +154,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "11 de junio de 1982",
-      premioGanado: "4 premios de la Academia, principalmente en efectos visuales y sonido."
+      premioGanado: 4
     }
   },
   {
@@ -167,7 +167,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "7 de noviembre de 2014",
-      premioGanado: "1 premio de la Academia por Mejores Efectos Visuales."
+      premioGanado: 1
     }
   },
   {
@@ -180,7 +180,7 @@ export default [
     facts: {
       taquillera: false,
       fechaPublicacion: "15 de diciembre de 1993",
-      premioGanado: "7 premios de la Academia, incluyendo Mejor Película y Mejor Director."
+      premioGanado: 7
     }
   },
   {
@@ -193,7 +193,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "12 de febrero de 2016",
-      premioGanado: "2 premios Critics' Choice Movie Awards."
+      premioGanado: 2
     }
   },
   {
@@ -206,7 +206,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "30 de mayo de 2003",
-      premioGanado: "1 premio de la Academia por Mejor Película Animada."
+      premioGanado: 1
     }
   },
   {
@@ -219,7 +219,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "8 de julio de 2010",
-      premioGanado: "4 premios de la Academia, principalmente en efectos visuales y cinematografía."
+      premioGanado: 4
     }
   },
   {
@@ -232,7 +232,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "15 de mayo de 2017",
-      premioGanado: "2 premios Critics' Choice Movie Awards."
+      premioGanado: 2
     }
   },
   {
@@ -245,7 +245,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "18 de junio de 2010",
-      premioGanado: "2 premios de la Academia, incluyendo Mejor Película Animada."
+      premioGanado: 2
     }
   },
   {
@@ -258,7 +258,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "15 de junio de 1994",
-      premioGanado: "2 premios de la Academia, incluyendo Mejor Banda Sonora Original."
+      premioGanado: 2
     }
   },
   {
@@ -271,7 +271,7 @@ export default [
     facts: {
       taquillera: false,
       fechaPublicacion: "6 de febrero de 2014",
-      premioGanado: "4 premios de la Academia, principalmente en diseño de vestuario y maquillaje."
+      premioGanado: 4
     }
   },
   {
@@ -284,7 +284,7 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "27 de octubre de 2017",
-      premioGanado: "2 premios de la Academia, incluyendo Mejor Película Animada."
+      premioGanado: 2
     }
   },
   {
@@ -297,7 +297,7 @@ export default [
     facts: {
       taquillera: false,
       fechaPublicacion: "1 de octubre de 2010",
-      premioGanado: "3 premios de la Academia, incluyendo Mejor Guión Adaptado."
+      premioGanado: 3
     }
   },
   {
@@ -310,7 +310,8 @@ export default [
     facts: {
       taquillera: true,
       fechaPublicacion: "22 de junio de 2007",
-      premioGanado: "1 premio de la Academia por Mejor Película Animada."
+      premioGanado: 1
     }
   }
 ]
+
