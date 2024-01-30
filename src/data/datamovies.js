@@ -1,4 +1,4 @@
-export default [
+export default  [
   {
     id: 1,
     name: "El Señor de los Anillos: El retorno del Rey",

@@ -2,6 +2,7 @@
 import { renderItems } from './view.js';
 import {ordenarNombresAZ, ordenarNombresZA} from './dataFunctions.js';
 import { generoMovies } from './dataFunctions.js';
+
 import data from './data/datamovies.js';
 //import { example } from './dataFunctions.js';
 
