@@ -1,4 +1,5 @@
 export const renderItems = (data) => {
+  console.log("data",data);
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   //Crear Funciones a usar
   let contenedor = "";

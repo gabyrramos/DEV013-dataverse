@@ -1,7 +1,7 @@
 // Aqui puedes agregar los datos que necesites para tus pruebas
 // al menos debe tener uno que se llame "data"
 
-export const datamovies = [{
+export const data = [{
   
   id: 1,
   name: "El Señor de los Anillos: El retorno del Rey",
