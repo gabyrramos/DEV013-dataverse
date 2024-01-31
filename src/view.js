@@ -1,10 +1,9 @@
 export const renderItems = (data) => {
-  console.log("data",data);
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   //Crear Funciones a usar
-  let contenedor = "";
+  let root = "";
   data.forEach((movies) => {
-    contenedor +=  `
+    root +=  `
     <div class = "wrapper">
      <div class="item-container">
        <div class="movie-info">
@@ -26,7 +25,7 @@ export const renderItems = (data) => {
   });
  
   // Retornar el contenedor actualizado
-  return contenedor;
+  return root;
   
 };
 //falta hacer testings de ul y de nuestra data

@@ -90,7 +90,7 @@ export default  [
     genero: "Ciencia_Ficcion",
     ingresos: 2787965087,
     shortDescription: "Épica de ciencia ficción que explora el planeta Pandora.",
-    longDescription: "Épica de ciencia ficción que explora el planeta Pandora. Lanzada el 18 de diciembre de 2009 y dirigida por James Cameron, "Avatar" se convirtió en la película más taquillera de la historia, con ingresos de $2,787,965,087. Ganó 3 premios y estableció nuevos estándares en efectos visuales.",
+    longDescription: "Épica de ciencia ficción que explora el planeta Pandora. Lanzada el 18 de diciembre de 2009 y dirigida por James Cameron, Avatar se convirtió en la película más taquillera de la historia, con ingresos de $2,787,965,087. Ganó 3 premios y estableció nuevos estándares en efectos visuales.",
     imageUrl: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/main/Imagenes/avatar.jpg",
     facts: {
       taquillera: true,
@@ -328,7 +328,7 @@ export default  [
     genero: "Animacion",
     ingresos: 623722818,
     shortDescription: "Comedia animada sobre un ratón que sueña con ser chef.",
-    longDescription: "Comedia animada sobre un ratón que sueña con ser chef. Dirigida por Brad Bird y estrenada el 22 de junio de 2007, "Ratatouille" recaudó $623,722,818. Aunque no fue una película taquillera, ganó 1 premio y se destacó por su encanto y originalidad. La historia de Remy, el ratón amante de la cocina, sigue siendo querida por el público.",
+    longDescription: "Comedia animada sobre un ratón que sueña con ser chef. Dirigida por Brad Bird y estrenada el 22 de junio de 2007, Ratatouille recaudó $623,722,818. Aunque no fue una película taquillera, ganó 1 premio y se destacó por su encanto y originalidad. La historia de Remy, el ratón amante de la cocina, sigue siendo querida por el público.",
     imageUrl: "https://raw.githubusercontent.com/gabyrramos/DEV013-dataverse/main/Imagenes/ratatouille.jpg",
     facts: {
       taquillera: true,
