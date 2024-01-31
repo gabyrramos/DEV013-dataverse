@@ -3,27 +3,35 @@ html{
   }
 
 h1{
-  color:yellow;
+  color:rgb(0, 0, 0);
   font-family:fantasy;
   font-size: 100px;
-  height: 150px;
-  font-weight: 100px;
   text-align: center;
-  background-color: white;
-  border: #fa1543;
+  border: 20px solid rgb(247, 2, 2);
   }
 
+header{
+  background-color: white;
+  height: 150px;
+  width:40%;
+}
 .item-container{
   margin-block: 10px;
   perspective: 100;
   -webkit-perspective: 800;
   perspective: 800;
   }
-
+.imgEs{
+  position: relative;
+  top: -205px; /* ajustar los valores para mover la imagen */
+  left: 550px;
+  width: 50px;
+  height: 50px;
+}
 .movie-info{
   width:300px;
   height:370px;
-  background-color:#eff1f4;
+  background-color:#000000;
   position:relative;
   transform-style:preserve-3d;
   transition: .7s ease;
@@ -41,9 +49,8 @@ h1{
 
 .img_movies{
   width: 100%;
-  height:100%;
-  right: 100px;
-  object-fit: cover;
+  height:50%;
+  object-fit:cover;
   margin: 0;
   }
 
@@ -54,7 +61,7 @@ h1{
   justify-content:center;
   align-items:center;
   text-align: center;
-  color:black;
+  color:rgb(255, 255, 255);
   font-family:'Calibria';
   font-size:large;
   }
@@ -79,7 +86,9 @@ h1{
   justify-content: space-around;
   align-items: center;
   }
-      
+.flex-container{
+  padding: 100px;
+}   
     
 label[for="categorias"],
 label[for="nombre"],
@@ -101,7 +110,6 @@ select{
 button[data-testid="button-clear"]{
   width: 180px;
   font-size:20px;
-  padding: 20px;
   margin: 50px;
   border-radius: 10px;
   line-height: 25px;
