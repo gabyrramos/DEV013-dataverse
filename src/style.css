@@ -7,14 +7,15 @@ h1{
   font-family:fantasy;
   font-size: 100px;
   text-align: center;
-  border: 20px solid rgb(247, 2, 2);
   }
 
-header{
-  background-color: white;
-  height: 150px;
-  width:40%;
-}
+
+  header{
+    background-image: url("header.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
 .item-container{
   margin-block: 10px;
   perspective: 100;
@@ -22,9 +23,10 @@ header{
   perspective: 800;
   }
 .imgEs{
+  display: flex;
   position: relative;
   top: -205px; /* ajustar los valores para mover la imagen */
-  left: 550px;
+  left: 600px;
   width: 50px;
   height: 50px;
 }
@@ -49,9 +51,10 @@ header{
 
 .img_movies{
   width: 100%;
-  height:50%;
-  object-fit:cover;
-  margin: 0;
+  height:auto;
+  /*object-fit:cover;
+  margin: 0;*/
+  
   }
 
 .atras{
@@ -113,6 +116,7 @@ button[data-testid="button-clear"]{
   margin: 50px;
   border-radius: 10px;
   line-height: 25px;
+  margin-top: -50px;
   }
 
 #root{
@@ -174,3 +178,4 @@ footer{
 .botonResetear:hover{
   background-color: #ffffef;
 }
+

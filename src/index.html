@@ -7,14 +7,13 @@
   </head>
   <body>
     <center><header>
-      <h1>MOVIES</h1>
+        
+      <h1></h1>
     </header></center>
-    <img class = "imgEs" img src="Estrella_amarilla.png" ></img>
-    <img class = "imgEs" img src="Estrella_amarilla.png" ></img>
-    <img class = "imgEs" img src="Estrella_amarilla.png" ></img>
+ 
     <div class="flex-container">
       <label for="categorias">Seleccione categorias: </label>
-      <select data-testid="select-filter" name="genero">
+      <select data-testid="select-filter" id="categorias" name="genero">
       <option value=""></option> 
       <option value="Accion">Acción</option>
       <option value="Ciencia_Ficcion">Ciencia Ficción</option>
@@ -23,12 +22,12 @@
       <option value="Animacion">Animación</option>
       </select>
       <label for="nombre">Ordena por nombre: </label>
-      <select data-testid="select-sort" name="orden">
+      <select data-testid="select-sort" id="nombre" name="orden">
       <option value=""></option> 
       <option value="asc">A-Z</option>
       <option value="desc">Z-A</option>
       </select>
-      <label for="estadisticas">Estadisticas de Premios: </label> 
+      <label for="premiosPorGenero" >Estadisticas de Premios: </label> 
       <button id="premiosPorGenero">Premios por Genero</button>
       <button id="premiosTotal">Total Premios Ganados</button>
     </div>
