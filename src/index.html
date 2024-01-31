@@ -11,7 +11,7 @@
     </header>
     
     <div class="flex-container">
-      <label for="categorias">Seleccione categorias</label>
+      <label for="categorias">Seleccione categorias: </label>
       <select data-testid="select-filter" name="genero">
       <option value=""></option> 
       <option value="Accion">Acción</option>
@@ -20,22 +20,36 @@
       <option value="Romance">Romance</option>
       <option value="Animacion">Animación</option>
       </select>
-      <label for="nombre">Ordena por nombre</label>
+      <label for="nombre">Ordena por nombre: </label>
       <select data-testid="select-sort" name="orden">
       <option value=""></option> 
       <option value="asc">A-Z</option>
       <option value="desc">Z-A</option>
       </select>
-      <label for="estadisticas">Estadisticas Premios</label>
-      <select name="estadistica-premios" id="estadistica-premios">
-      <option value=""></option> 
-      <option id="porGenero">Premios por Genero</option>
-      <option id="enTotal">Total premios ganados</option>
-      </select>
-      </div>
-      <div class="centrarboton">
-        <button data-testid="button-clear">Resetear Busqueda</button> 
-      </div>
+      <label for="estadisticas">Estadisticas de Premios: </label> 
+      <button id="premiosPorGenero">Premios por Genero</button>
+      <button id="premiosTotal">Total Premios Ganados</button>
+    </div>
+
+    <dialog class="statsPremios1" id="statsPremios1">
+      <h2>Total de premios ganados por Género</h2>
+      <li>Accion:</li>
+      <li>Ciencia Ficción:</li>
+      <li>Drama:</li>
+      <li>Romance:</li>
+      <li>Animación:</li>
+      <button class="cerrarBoton1" id="cerrarBoton1">Cerrar Stadisticas</button>
+    </dialog>
+    <dialog class="statsPremios2" id="statsPremios2">
+      <h2>Promedio total de premios ganados</h2>
+      <p>Total premios ganados:</p>
+      <p>Promedio:</p>
+      <button class="cerrarBoton2" id="cerrarBoton2">Cerrar Stadisticas</button>
+    </dialog>
+
+    <div class="centrarboton">
+      <button data-testid="button-clear" class="botonResetear">Resetear Busqueda</button> 
+    </div>
     <!--main es el contenedor de las imagenes--> 
     <main id="root">
       <ul></ul>

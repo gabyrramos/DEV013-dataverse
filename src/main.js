@@ -10,7 +10,7 @@ const root = document.getElementById('root');
 root.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
-const estadisticaPremios = document.querySelector('[id="estadistica-premios"]');
+//const estadisticaPremios = document.querySelector('[id="estadistica-premios"]');
 let datosOrdenados = [...data];
 
 // Función para actualizar la vista cuando se cambian los selectores
@@ -58,7 +58,7 @@ const reset = document.querySelector('[data-testid="button-clear"]');
 reset.addEventListener('click',function(){
   selectFilter.selectedIndex = 0;
   selectSort.selectedIndex = 0;
-  estadisticaPremios.selectedIndex = 0;
+  //estadisticaPremios.selectedIndex = 0;
   datosOrdenados = data;
   root.innerHTML =renderItems(data);
 });
@@ -66,3 +66,28 @@ selectSort.addEventListener('change', actualizarVista);
 selectFilter.addEventListener('change', mostrarPorGenero);
 
 
+//Creando las estadisticas
+
+const totalPremiosGenero = document.querySelector('.statsPremios1');
+const premiosGenero = document.querySelector('#premiosPorGenero');
+const boton1 = document.querySelector('.cerrarBoton1');
+
+premiosGenero.addEventListener('click', ()=> {
+  totalPremiosGenero.showModal();
+})
+boton1.addEventListener('click', ()=> {
+  totalPremiosGenero.close();
+})
+
+const totalPremios = document.querySelector('.statsPremios2');
+const abrirTotalPremios = document.querySelector('#premiosTotal');
+const boton2 = document.querySelector('.cerrarBoton2');
+
+abrirTotalPremios.addEventListener('click', ()=> {
+  totalPremios.showModal();
+})
+boton2.addEventListener('click', ()=> {
+  totalPremios.close();
+})
+
+//Llamamos a la funcion de stats
