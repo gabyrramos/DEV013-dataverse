@@ -4,11 +4,11 @@ export const renderItems = (data) => {
   let root = "";
   data.forEach((movies) => {
     root +=  `
-    <div class = "wrapper">
-     <div class="item-container">
-       <div class="movie-info">
-          <div class = "imagen">
-           <dd itemprop = "imagen">
+    <div class = "wrapper" bis_skin_checked="1">
+     <div class="item-container" bis_skin_checked="1">
+       <div class="movie-info" bis_skin_checked="1">
+          <div class = "imagen" bis_skin_checked="1">
+           <dd itemprop = "imagen" class="ddimagen">
            <img class = "img_movies" src=${movies.imageUrl}>
             </dd>
           </div>
