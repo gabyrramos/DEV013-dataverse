@@ -44,3 +44,28 @@ export const generoMovies = (data,categoriaSeleccionada) => {
 
 //Aqui van las funciones de las stadisticas:
 
+// Calcular estadísticas de ingresos por género
+export const calcularEstadisticasIngresosPorGenero = (data) => {
+  return data.reduce((acumulador, pelicula) => {
+    const { genero, ingresos } = pelicula;
+
+    if (!acumulador[genero]) {
+      acumulador[genero] = {
+        cantidadPeliculas: 0,
+        totalIngresos: 0,
+        ingresoPromedio: 0,
+      };
+    }
+
+    acumulador[genero].cantidadPeliculas++;
+    acumulador[genero].totalIngresos += ingresos;
+    acumulador[genero].ingresoPromedio =
+      acumulador[genero].totalIngresos / acumulador[genero].cantidadPeliculas;
+
+    return acumulador;
+  }, {});
+};
+
+// Imprimir estadísticas por género en la consola
+
+

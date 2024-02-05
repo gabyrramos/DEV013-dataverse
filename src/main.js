@@ -2,8 +2,10 @@
 import { renderItems } from './view.js';
 import {ordenarNombresAZ, ordenarNombresZA} from './dataFunctions.js';
 import { generoMovies } from './dataFunctions.js';
-
+import { calcularEstadisticasIngresosPorGenero } from './dataFunctions.js';
 import data from './data/datamovies.js';
+
+
 
 const showr = renderItems(data);
 const root = document.getElementById('root');
@@ -11,6 +13,12 @@ root.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
 //const estadisticaPremios = document.querySelector('[id="estadistica-premios"]');
+const totalPremios = document.querySelector('.statsPremios2');
+const totalGenero = document.querySelector('.statsPremios1');
+const abrirTotalPremios = document.querySelector('#premiosTotal');
+const boton2 = document.querySelector('.cerrarBoton2');
+const boton1 = document.querySelector('#premiosPorGenero');
+const button1 = document.querySelector('.cerrarBoton1');
 let datosOrdenados = [...data];
 
 // Función para actualizar la vista cuando se cambian los selectores
@@ -67,27 +75,76 @@ selectFilter.addEventListener('change', mostrarPorGenero);
 
 
 //Creando las estadisticas
+const imprimirEstadisticasPorGenero = (estadisticas) => {
+  const dialog = document.getElementById('statsPremios1');
+  const generoTitulo = document.getElementById('generoTitulo');
+  const cantidadPeliculas = document.getElementById('cantidadPeliculas');
+  const totalIngresos = document.getElementById('totalIngresos');
+  const ingresoPromedio = document.getElementById('ingresoPromedio');
 
-const totalPremiosGenero = document.querySelector('.statsPremios1');
-const premiosGenero = document.querySelector('#premiosPorGenero');
-const boton1 = document.querySelector('.cerrarBoton1');
+  // Limpiar contenido previo
+  generoTitulo.innerHTML = '';
+  cantidadPeliculas.textContent = '';
+  totalIngresos.textContent = '';
+  ingresoPromedio.textContent = '';
 
-premiosGenero.addEventListener('click', ()=> {
-  totalPremiosGenero.showModal();
-})
+  for (const genero in estadisticas) {
+    // Crear elemento li para el nombre del género
+    const generoLi = document.createElement('li');
+    generoLi.textContent = `${genero}:`;
+
+    // Crear lista ul para cada género
+    const listaUl = document.createElement('ul');
+
+    // Crear elementos li para cada estadística
+    const cantidadLi = document.createElement('li');
+    cantidadLi.textContent = `Cantidad de películas: ${estadisticas[genero].cantidadPeliculas}`;
+
+    const ingresosLi = document.createElement('li');
+    ingresosLi.textContent = `Total de ingresos: $${estadisticas[genero].totalIngresos.toLocaleString()}`;
+
+    const ingresoPromedioLi = document.createElement('li');
+    ingresoPromedioLi.textContent = `Ingreso promedio: $${estadisticas[genero].ingresoPromedio.toLocaleString()}`;
+
+    // Adjuntar elementos li al contenedor ul
+    listaUl.appendChild(cantidadLi);
+    listaUl.appendChild(ingresosLi);
+    listaUl.appendChild(ingresoPromedioLi);
+
+    // Adjuntar lista ul al contenedor generoTitulo
+    generoLi.appendChild(listaUl);
+    generoTitulo.appendChild(generoLi);
+  }
+
+  // Abre el dialog
+  dialog.showModal();
+};
+
+
+
+
 boton1.addEventListener('click', ()=> {
-  totalPremiosGenero.close();
+  console.log('click');
+  const estadisticas = calcularEstadisticasIngresosPorGenero(data);
+  imprimirEstadisticasPorGenero(estadisticas);
+  totalGenero.showModal();
 })
 
-const totalPremios = document.querySelector('.statsPremios2');
-const abrirTotalPremios = document.querySelector('#premiosTotal');
-const boton2 = document.querySelector('.cerrarBoton2');
+button1.addEventListener('click', ()=> {
+  totalGenero.close();
+})
 
 abrirTotalPremios.addEventListener('click', ()=> {
+  console.log('click');
   totalPremios.showModal();
 })
+
 boton2.addEventListener('click', ()=> {
-  totalPremios.close();
+ totalPremios.close();
 })
 
-//Llamamos a la funcion de stats
+
+
+
+
+
