@@ -66,6 +66,22 @@ export const calcularEstadisticasIngresosPorGenero = (data) => {
   }, {});
 };
 
-// Imprimir estadísticas por género en la consola
+// Estadísticas por género 
 
+export const premiosGanadosTotal = (data) => {
+  const sumaTotalPremiosGanados = data.reduce(function(total, premioGanado) {
+    return total + parseInt(premioGanado,10);
+  }, 0);
+
+  console.log("suma",sumaTotalPremiosGanados);
+  return sumaTotalPremiosGanados;
+};
+
+export const promedioPremiosGanados = (data) => {
+  const sumaTotalPremiosGanados = premiosGanadosTotal(data);
+  const promedioPremios = sumaTotalPremiosGanados / data.length;
+  
+  console.log("promedio", promedioPremios);
+  return promedioPremios;
+} 
 

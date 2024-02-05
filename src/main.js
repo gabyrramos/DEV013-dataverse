@@ -1,6 +1,6 @@
 //import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
-import {ordenarNombresAZ, ordenarNombresZA} from './dataFunctions.js';
+import {ordenarNombresAZ, ordenarNombresZA, premiosGanadosTotal, promedioPremiosGanados} from './dataFunctions.js';
 import { generoMovies } from './dataFunctions.js';
 import { calcularEstadisticasIngresosPorGenero } from './dataFunctions.js';
 import data from './data/datamovies.js';
@@ -75,6 +75,7 @@ selectFilter.addEventListener('change', mostrarPorGenero);
 
 
 //Creando las estadisticas
+
 const imprimirEstadisticasPorGenero = (estadisticas) => {
   const dialog = document.getElementById('statsPremios1');
   const generoTitulo = document.getElementById('generoTitulo');
@@ -145,6 +146,29 @@ boton2.addEventListener('click', ()=> {
 
 
 
+//Imprimir estadisticas por premios genero 
 
+const abrirPremiosBoton = document.getElementById("premiosTotal");
+const cerrarBoton = document.getElementById("cerrarBoton2");
+const dialog = document.getElementById("statsPremios2");
+dialog.returnValue = "statspremios";
 
+function openCheck(dialog) {
+  if (dialog.open) {
+    console.log("Dialog open");
+  } else {
+    console.log("Dialog closed");
+  }
+}
 
+// Update button opens a modal dialog
+abrirPremiosBoton.addEventListener("click", () => {
+  premiosGanadosTotal.showModal();
+  openCheck(dialog);
+});
+
+// Form cancel button closes the dialog box
+cerrarBoton.addEventListener("click", () => {
+  dialog.close("");
+  openCheck(dialog);
+});
