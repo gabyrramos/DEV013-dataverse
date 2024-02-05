@@ -20,6 +20,8 @@
       <option value="Drama">Drama</option>
       <option value="Romance">Romance</option>
       <option value="Animacion">Animación</option>
+      <option value="Fantasia">Fantasia</option>
+      <option value="Comedia">Comedia</option>
       </select>
       <label for="nombre">Ordena por nombre: </label>
       <select data-testid="select-sort" id="nombre" name="orden">
@@ -34,11 +36,10 @@
 
     <dialog class="statsPremios1" id="statsPremios1">
       <h2>Total de premios ganados por Género</h2>
-      <li>Accion:</li>
-      <li>Ciencia Ficción:</li>
-      <li>Drama:</li>
-      <li>Romance:</li>
-      <li>Animación:</li>
+      <li id="generoTitulo"></li>
+      <li id="cantidadPeliculas"></li>
+      <li id="totalIngresos"></li>
+      <li id="ingresoPromedio"></li>
       <button class="cerrarBoton1" id="cerrarBoton1">Cerrar Stadisticas</button>
     </dialog>
     <dialog class="statsPremios2" id="statsPremios2">

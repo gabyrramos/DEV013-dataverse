@@ -186,3 +186,13 @@ footer{
   background-color: #ffffef;
 }
 
+#generoTitulo,
+#cantidadPeliculas,
+#totalIngresos,
+#ingresoPromedio{
+  font-family: 'Courier New', Courier, monospace;
+   word-spacing: 0.25em;
+   margin: 16px;
+   list-style:none;
+  
+};
