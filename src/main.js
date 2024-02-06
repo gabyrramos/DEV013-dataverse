@@ -76,6 +76,8 @@ selectFilter.addEventListener('change', mostrarPorGenero);
 
 //Creando las estadisticas
 
+//estadistica 1
+
 const imprimirEstadisticasPorGenero = (estadisticas) => {
   const dialog = document.getElementById('statsPremios1');
   const generoTitulo = document.getElementById('generoTitulo');
@@ -122,8 +124,6 @@ const imprimirEstadisticasPorGenero = (estadisticas) => {
 };
 
 
-
-
 boton1.addEventListener('click', ()=> {
   console.log('click');
   const estadisticas = calcularEstadisticasIngresosPorGenero(data);
@@ -135,40 +135,50 @@ button1.addEventListener('click', ()=> {
   totalGenero.close();
 })
 
-abrirTotalPremios.addEventListener('click', ()=> {
-  console.log('click');
-  totalPremios.showModal();
-})
+//estadistica 2
 
-boton2.addEventListener('click', ()=> {
- totalPremios.close();
-})
+const mostrarEstadisticasPremios = (premiosData) => {
+  const estadistica2 = document.getElementById("statsPremios2");
+  
 
+  for (const premios in premiosData){
+    const premiosLi = document.createElement('li');
+    premiosLi.textContent = `${premios}:`;
 
+    const listaPremios = document.createElement('ul');
 
-//Imprimir estadisticas por premios genero 
+    const itemsPremios = document.createElement('li');
+    itemsPremios.textContent = `Total Premios Ganados: ${premiosData[facts.premioGanado].mostrarSumaPremios}`;
 
-const abrirPremiosBoton = document.getElementById("premiosTotal");
-const cerrarBoton = document.getElementById("cerrarBoton2");
-const dialog = document.getElementById("statsPremios2");
-dialog.returnValue = "statspremios";
+    const itemsPromedio = document.createElement('li');
+    itemsPromedio.textContent = `Promedio Premios Ganados: ${premiosData[facts.premioGanado].mostrarPromedioPremios}`;
 
-function openCheck(dialog) {
-  if (dialog.open) {
-    console.log("Dialog open");
-  } else {
-    console.log("Dialog closed");
+    listaPremios.appendChild(itemsPremios);
+    listaPremios.appendChild(itemsPromedio);
+    premiosLi.appendChild(listaPremios);
+
+    estadistica2.appendChild(premiosLi);
+
   }
+    
+  estadistica2.showModal();
 }
 
-// Update button opens a modal dialog
-abrirPremiosBoton.addEventListener("click", () => {
-  premiosGanadosTotal.showModal();
-  openCheck(dialog);
+
+
+abrirTotalPremios.addEventListener('click', () => {
+  console.log('click');
+  const premiosData = premiosGanadosTotal(data);
+  mostrarEstadisticasPremios(premiosData);
+  
+  const promedioData = promedioPremiosGanados(data);
+  mostrarEstadisticasPremios(promedioData);
+  estadistica2.showModal();
+  
 });
 
-// Form cancel button closes the dialog box
-cerrarBoton.addEventListener("click", () => {
-  dialog.close("");
-  openCheck(dialog);
+
+boton2.addEventListener('click', () => {
+  const estadistica2 = document.getElementById("statsPremios2");
+  estadistica2.close();
 });
