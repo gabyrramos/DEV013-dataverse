@@ -66,6 +66,25 @@ export const calcularEstadisticasIngresosPorGenero = (data) => {
   }, {});
 };
 
-// Imprimir estadísticas por género en la consola
+// Estadísticas por género 
 
+export const premiosGanadosTotal = (data) => {
+  const sumaTotalPremiosGanados = data.reduce(function(total, movie) {
+    if (movie.facts && typeof movie.facts.premioGanado === 'number') {
+      return total + movie.facts.premioGanado;
+    }
+    return total 
+  }, 0);
+
+  console.log(sumaTotalPremiosGanados);
+  return sumaTotalPremiosGanados;
+};
+
+export const promedioPremiosGanados = (data) => {
+  const sumaTotalPremiosGanados = premiosGanadosTotal(data);
+  const promedioPremios = data.length > 0 ? sumaTotalPremiosGanados / data.length : 0;
+
+  console.log(promedioPremios);
+  return promedioPremios;
+};
 

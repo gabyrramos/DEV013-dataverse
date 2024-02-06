@@ -1,6 +1,6 @@
 //import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
-import {ordenarNombresAZ, ordenarNombresZA} from './dataFunctions.js';
+import {ordenarNombresAZ, ordenarNombresZA, premiosGanadosTotal, promedioPremiosGanados} from './dataFunctions.js';
 import { generoMovies } from './dataFunctions.js';
 import { calcularEstadisticasIngresosPorGenero } from './dataFunctions.js';
 import data from './data/datamovies.js';
@@ -75,6 +75,9 @@ selectFilter.addEventListener('change', mostrarPorGenero);
 
 
 //Creando las estadisticas
+
+//estadistica 1
+
 const imprimirEstadisticasPorGenero = (estadisticas) => {
   const dialog = document.getElementById('statsPremios1');
   const generoTitulo = document.getElementById('generoTitulo');
@@ -121,8 +124,6 @@ const imprimirEstadisticasPorGenero = (estadisticas) => {
 };
 
 
-
-
 boton1.addEventListener('click', ()=> {
   console.log('click');
   const estadisticas = calcularEstadisticasIngresosPorGenero(data);
@@ -134,17 +135,50 @@ button1.addEventListener('click', ()=> {
   totalGenero.close();
 })
 
-abrirTotalPremios.addEventListener('click', ()=> {
+//estadistica 2
+
+const mostrarEstadisticasPremios = (premiosData) => {
+  const estadistica2 = document.getElementById("statsPremios2");
+  
+
+  for (const premios in premiosData){
+    const premiosLi = document.createElement('li');
+    premiosLi.textContent = `${premios}:`;
+
+    const listaPremios = document.createElement('ul');
+
+    const itemsPremios = document.createElement('li');
+    itemsPremios.textContent = `Total Premios Ganados: ${premiosData[facts.premioGanado].mostrarSumaPremios}`;
+
+    const itemsPromedio = document.createElement('li');
+    itemsPromedio.textContent = `Promedio Premios Ganados: ${premiosData[facts.premioGanado].mostrarPromedioPremios}`;
+
+    listaPremios.appendChild(itemsPremios);
+    listaPremios.appendChild(itemsPromedio);
+    premiosLi.appendChild(listaPremios);
+
+    estadistica2.appendChild(premiosLi);
+
+  }
+    
+  estadistica2.showModal();
+}
+
+
+
+abrirTotalPremios.addEventListener('click', () => {
   console.log('click');
-  totalPremios.showModal();
-})
-
-boton2.addEventListener('click', ()=> {
- totalPremios.close();
-})
-
-
-
-
+  const premiosData = premiosGanadosTotal(data);
+  mostrarEstadisticasPremios(premiosData);
+  
+  const promedioData = promedioPremiosGanados(data);
+  mostrarEstadisticasPremios(promedioData);
+  estadistica2.showModal();
+  
+});
 
 
+boton2.addEventListener('click', () => {
+  const estadistica2 = document.getElementById("statsPremios2");
+  estadistica2.close();
+});
