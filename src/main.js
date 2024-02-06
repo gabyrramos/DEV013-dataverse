@@ -13,7 +13,6 @@ root.innerHTML = showr;
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectFilter = document.querySelector('[data-testid="select-filter"]');
 //const estadisticaPremios = document.querySelector('[id="estadistica-premios"]');
-const totalPremios = document.querySelector('.statsPremios2');
 const totalGenero = document.querySelector('.statsPremios1');
 const abrirTotalPremios = document.querySelector('#premiosTotal');
 const boton2 = document.querySelector('.cerrarBoton2');
@@ -52,7 +51,7 @@ const mostrarPorGenero = () => {
     datosOrdenados = ordenarNombresZA(peliculasFiltradas);
   } else{
     datosOrdenados = peliculasFiltradas;
-    console.log(peliculasFiltradas);
+    
   }
   const showp = renderItems(datosOrdenados);
   root.innerHTML = showp;
@@ -125,7 +124,6 @@ const imprimirEstadisticasPorGenero = (estadisticas) => {
 
 
 boton1.addEventListener('click', ()=> {
-  console.log('click');
   const estadisticas = calcularEstadisticasIngresosPorGenero(data);
   imprimirEstadisticasPorGenero(estadisticas);
   totalGenero.showModal();
@@ -147,14 +145,14 @@ const mostrarEstadisticasPremios = (totalPremios, promedioPremios) => {
   totalPromedio.textContent = "";
   totalSuma.textContent = `Total de Premios Ganados: ${totalPremios.toLocaleString()}`;
   totalPromedio.textContent = `Total de Premios Ganados: ${promedioPremios.toLocaleString()}`;
-  console.log(totalPromedio);
+  
   dialog2.showModal();
 }
 
 
 
 abrirTotalPremios.addEventListener('click', () => {
-  console.log('click');
+  
   const premiosData = (data);
   const totalPremios = premiosGanadosTotal(premiosData);
   const promedioPremios = promedioPremiosGanados(premiosData);

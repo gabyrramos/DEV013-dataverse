@@ -37,7 +37,6 @@ export const ordenarNombresZA = (data) => {
 // Filtra las películas por el género seleccionado
 export const generoMovies = (data,categoriaSeleccionada) => {
   const genero = data.filter(movie=>movie.genero===categoriaSeleccionada)
-  console.log(genero);
   return genero; 
 };
 
@@ -76,7 +75,7 @@ export const premiosGanadosTotal = (data) => {
     return total 
   }, 0);
 
-  console.log(sumaTotalPremiosGanados);
+  
   return sumaTotalPremiosGanados;
 };
 
@@ -84,7 +83,7 @@ export const promedioPremiosGanados = (data) => {
   const sumaTotalPremiosGanados = premiosGanadosTotal(data);
   const promedioPremios = data.length > 0 ? sumaTotalPremiosGanados / data.length : 0;
 
-  console.log(promedioPremios);
+  
   return promedioPremios;
 };
 
