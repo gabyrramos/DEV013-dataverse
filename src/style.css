@@ -132,6 +132,7 @@ button[data-testid="button-clear"]{
 }      
 
 footer{
+  color: white;
   font-size: 40px;
   margin-top:50px;
   width:100%;
@@ -140,7 +141,11 @@ footer{
   flex-direction:row;
   justify-content:center;
   align-items: flex-end;
-  background-color:white;  
+  background-image: url("footer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+ 
 }
 
 .statsPremios1, .statsPremios2 {
