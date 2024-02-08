@@ -15,7 +15,7 @@ export const renderItems = (data) => {
          <div class = "atras">
          <dl itemscope itemtype="MOVIES">
          <dt>Nombre:</dt><dd itemprop="name">${movies.name}</dd>
-         <dt>Descripción:</dt><dd itemprop="description">${movies.shortDescription}</dd>
+         <dt>Short descripción:</dt><dd itemprop="shortdescription">${movies.shortDescription}</dd>
          <dt>Premios Ganados:</dt><dd itemprop="datos_importantes">${movies.facts.premioGanado}</dd>
          </dl></div>
        </div>
