@@ -24,11 +24,9 @@ Parte de nuestro proyecto es cubrir los requerimientos que pide, entonces nuestr
 * La aplicación será _responsive_, es decir, debe visualizarse sin problemas
   desde distintos tamaños de pantallas: móviles, tablets y desktops.
 
-<p style="text-align:center">
-<img src="data.png"/>
+<p align="center">
+<img src="./src/data.png">
 </p>
-
-
 
 
 ### 3. Criterios de aceptación mínimos del proyecto
@@ -133,7 +131,10 @@ Entrevistamos a un grupo de personas respecto a nuestro proyecto y comparamos la
 
 #### Diseño de la Interfaz de Usuaria
 
-<p style="text-align:center"><img src="prototipobf.png"/></p>
+<p align="center">
+<img src="./src/prototipobf.png">
+</p>
+
 
 Diseño en Figma:
 
@@ -141,22 +142,38 @@ https://www.figma.com/file/hbSnYGsgQW47HFaKG25vkv/Untitled?type=whiteboard&t=sJN
 
 ##### Prototipo de alta fidelidad
 
-<p style="text-align:center"><img src="prototipoaf.png"/></p>
+<p align="center">
+<img src="./src/prototipoaf.png">
+</p>
+
 
 #### Datos Generados
-<p style="text-align:center"><img src="datos1.png"/></p>
+<p align="center">
+<img src="./src/datos1.png">
+</p>
 
-<p style="text-align:center"><img src="datos2.png"/></p>
 
-<p style="text-align:center"><img src="datos3.png"/></p>
+<p align="center">
+<img src="./src/datos2.png">
+</p>
+
+<p align="center">
+<img src="./src/datos3.png">
+</p>
 
 #### AI Prompt utilizado
 
-<p style="text-align:center"><img src="prompt1.png"/></p>
+<p align="center">
+<img src="./src/prompt1.png">
+</p>
 
-<p style="text-align:center"><img src="prompt2.png"/></p>
+<p align="center">
+<img src="./src/prompt2.png">
+</p>
 
-<p style="text-align:center"><img src="prompt3.png"/></p>
+<p align="center">
+<img src="./src/prompt3.png">
+</p>
 
 #### Pruebas unitarias
 
