@@ -121,7 +121,7 @@ line-height: 25px;
 margin-top: -700px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 100px) {
   button[data-testid="button-clear"] {
     width: 90px;
   }
