@@ -1,80 +1,19 @@
 # Dataverse
 
-## Índice
+## 1. Resumen del proyecto
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Funcionalidades](#4-funcionalidades)
-* [5. Consideraciones técnicas](#5-consideraciones-técnicas)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
-* [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
-* [10. Consideraciones para pedir tu Project Feedback](#10-consideraciones-para-pedir-tu-project-feedback)
+En nuestro proyecto se construyo una pagina de peliculas recomendadas que nos permita filtrar las peliculas por genero y organizarlas tambien por alfabeto (A-Z). Nuestro set de datos fueron generados usando CharGPT, donde le indicamos al prompt las especificaciones de los datos requeridos. 
 
-***
+Adicionalmente le agregamos dos botones que le permita al usuario acceder a estadisticas, una de ellas muestra el promedio y suma total de ingresos producidos por genero y la segunda muestra los premios ganados por genero y total.
+ La interfaz es simple y facil de explorar para el usuario y los botones son faciles de visualizar. 
 
-## 1. Preámbulo
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-las usuarias, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+## 2. Funcionalidades
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por las
-usuarias, al lado derecho.
-
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
-
-## 2. Resumen del proyecto
-
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que vas a generar con [prompting](https://www.itmadrid.com/que-es-un-prompt-en-inteligencia-artificial-ia/).
-Esta página web se adecuará a lo que descubras que tu usuaria
-necesita.
-
-Además, en este proyecto utilizarás herramientas de
-[inteligencia artificial](https://es.wikipedia.org/wiki/Inteligencia_artificial)
-como [ChatGPT](https://openai.com/chatgpt), [ExplainDev](https://explain.dev/),
-entre otras para generar un set de datos en un archivo javascript.
-
-El propósito de generar los datos en esta manera es brindarte la oportunidad de
-adentrarte en el empleo de herramientas impulsadas por la inteligencia
-artificial, así como en [técnicas de
-prompting](https://learnprompting.org/es/docs/intro).
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y calcular alguna estadística**. Con estadística
-nos referimos a distintos cálculos que puedes hacer con los datos para mostrar
-información aún más relevante a las usuarias (promedio, el valor máximo
-o mínimo, etc).
-
-## 3. Consideraciones generales
-
-* Este proyecto se debe resolver en duplas.
-* El rango de tiempo estimado para completar el proyecto es de 4 a 5 Sprints.
-* El tiempo estimado que deberías dedicar a la [generación de los datos](#generar-los-datos)
-  es de máximo un sprint. Además, al final del proyecto deberás presentar
-  un [screenshot del prompt utilizado](#prompt-utilizado).
-* Si ves que te va a tomar más tiempo,
-  deberás utilizar los datos de ejemplo que los vas a encontrar en
-  esta ruta: `./src/data/dataset.js`.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-
-## 4. Funcionalidades
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y calcular alguna estadística**.
-
-Aquí definimos en más detalle las funcionalidades mínimas que debe tener:
+Parte de nuestro proyecto es cubrir los requerimientos que pide, entonces nuestro objetivos claro son: 
+-Que se pueda visualizar la data
+-Que podamos filtrarla, ordenarla y calcular alguna estadística.
 
 * La aplicación debe permitir a la usuaria ver los items de la data en una visualización,
   que puede ser [tipo tarjetas](http://www.uxables.com/diseno-ux-ui/que-es-y-como-disenar-una-card/)
@@ -127,42 +66,18 @@ Aquí definimos en más detalle las funcionalidades mínimas que debe tener:
   </dl>
   ```
 
-* La aplicación debe calcular y visualizar una estadística de la data. Puede
-  ser una propiedad computada de cada item, como una propiedad adicional
-  (por ejemplo, el índice de masa corporal de cada pokemon) o unas estadísticas
-  de la data completa (por ejemplo, total de personas nacidas en los años 80s).
+* La aplicación debe calcular y visualizar una estadística de la data.
 
-* La aplicación debe permitir a la usuaria filtrar la data. Deberás usar
-  un elemento [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
-  con [un atributo de datos](https://developer.mozilla.org/es/docs/Learn/HTML/Howto/Use_data_attributes)
-  `data-testid="select-filter"`, y un atributo `name` con el nombre
-  de la propiedad por la que filtrará (por ejemplo, si vas a filtrar por "type",
-  el `<select>` tendrá  `name="type"`). Los `<option>` de este `<select>` deberán
-  tener en el atributo `value` el valor del filtro (por ejemplo, si vas a filtrar
-  por type "fire" sería `<option value="fire">Fire</option>`).
+
+
+
+
+* La aplicación debe permitir a la usuaria filtrar la data. 
 
 * La aplicación debe permitir a la usuaria ordenar la data.
-  - Tendrá al menos un control `<select>` para ordenar.
-  - Si usas solo un control `<select>`, debe tener
-    [un atributo de datos](https://developer.mozilla.org/es/docs/Learn/HTML/Howto/Use_data_attributes)
-    `data-testid="select-sort"` y un atributo `name` con el nombre de la
-    propiedad por la que ordenará. (por ejemplo, si vas a ordenar por
-    "num" seria `name="num"`). Este `<select>` tendrá dos [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)
-    con `value` `asc` y `desc`, para ordenar ascendente y descendente la data
-    respectivamente (por ejemplo, `<option value="asc">A - Z</option>`).
-  - Una alternativa es ofrecer la usuaria un ordenamiento mas complejo.
-    Podrías implementar ordenar por varios propiedades. En este caso sería con
-    un `<select>` con un atributo de datos `data-testid="select-sort"`, y que
-    contiene hijos `<option>` con un `value` del nombre de la propiedad con
-    cual vas a ordenar. (Por ejemplo, `<option value="name">Nombre</option>`).
-    También, necesitarás otro control (`<radio>`,`<select>`, etc.) para decir
-    que el ordenamiento es ascendente o descendente. Este control secundaria
-    tendrá un atributo `name="sort-order"`, y tiene values `asc` y `desc`.
 
 * Las funcionalidades de ordenar deben operar sobre la data filtrada.
-  Por ejemplo, si filtro los pokemones de tipo fuego y luego los ordeno por
-  nombre ascendentemente, la aplicación deberá mantener el filtro aplicado y
-  ordenar los pokemones de tipo fuego.
+  
 
 * La aplicación debe permitir a la usuaria reiniciar la aplicación, limpiando
   filtros y ordenamiento, con un `<button>` con un atributo de datos
@@ -172,23 +87,10 @@ Aquí definimos en más detalle las funcionalidades mínimas que debe tener:
   la página, si no que deben agregar el contenido en una manera
   dinámica via javascript.
 
+
 * La aplicación será _responsive_, es decir, debe visualizarse sin problemas
   desde distintos tamaños de pantallas: móviles, tablets y desktops.
 
-Los siguientes wireframes, son ejemplos de una interfaz que puede cumplir con esta
-funcionalidad. Como podrás ver, estos diseños cumplen con la metodología
-[Mobile First](https://developer.mozilla.org/es/docs/Glossary/Mobile_First), la misma
-que te recomendamos utilizar en todos tus proyectos:
-
-Diseño Mobile:
-
-* [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14)
-* [Wireframe mobile 2](https://github.com/Laboratoria/curriculum/assets/123121338/bf96d3ce-150f-47a2-a605-2efac2e0497b)
-
-Diseño Desktop:
-
-* [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png)
-* [Wireframe desktop 2](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137087-6cef16bc-643a-4d6d-bc1c-e0daaeb21c88.png)
 
 ## 5. Consideraciones técnicas
 
