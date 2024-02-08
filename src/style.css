@@ -10,18 +10,20 @@ h1{
   }
 
 
-  header{
-    background-image: url("header.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 600px;
-  }
+header{
+  background-image: url("header.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
 .item-container{
   margin-block: 10px;
   perspective: 100;
   -webkit-perspective: 800;
   perspective: 800;
-  }
+}
+
 .imgEs{
   display: flex;
   position: relative;
@@ -40,28 +42,22 @@ h1{
   -webkit-box-shadow: 0px 10px 15px -5px hsla(59, 100%, 48%, 0.651);
   -moz-box-shadow: 0px 10px 15px -5px hsla(59, 100%, 48%, 0.651);
   box-shadow:0px 10px 15px -5px hsla(59, 100%, 48%, 0.651);
-  }
+}
 .imagen, .atras{
   width: 100%;
   height:100%;
   position:absolute;
   backface-visibility:hidden;
   -webkit-backface-visibility:hidden;  
-  }
+}
 
-  .img_movies{
-    width: 100%;
-    object-fit:cover;
-    margin: 5px;
-    margin-left: -35px;
-    }
+.img_movies{
+  width: 100%;
+  object-fit:cover;
+  margin: 5px;
+  margin-left: -35px;
+}
   
-  .ddimagen{
-    padding: 15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
 
 .atras{
   transform: rotateY(180deg);
