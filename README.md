@@ -129,6 +129,12 @@ Web APIs
 
 Entrevistamos a un grupo de personas respecto a nuestro proyecto y comparamos las ideas para poder observar los patrones. Despues separamos los intereses mas comunes entre las usuarias y organizamos los pasos a seguir para diseñar nuestro prototipo.
 
+Primero nos organizamos en Trello para poder visualizar los pasos que necesitamos hacer para nuestro proyecto
+
+<p style="center">
+<img src="./src/trello.gif"/>
+</p>
+
 #### Diseño de la Interfaz de Usuaria
 
 <p align="center">
