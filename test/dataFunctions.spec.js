@@ -1,6 +1,6 @@
 //import { example, anotherExample } from '../src/dataFunctions.js';
 
-import { ordenarNombresAZ, ordenarNombresZA, generoMovies, premiosGanadosTotal, promedioPremiosGanados } from '../src/dataFunctions.js';
+import { ordenarNombresAZ, ordenarNombresZA, generoMovies, premiosGanadosTotal, promedioPremiosGanados, calcularEstadisticasIngresosPorGenero } from '../src/dataFunctions.js';
 
 describe('ordenarNombresAZ', () => {
   it('debería ordenar correctamente un array de objetos por el campo "name" en orden alfabético ascendente', () => {
@@ -99,5 +99,35 @@ describe('promedioPremiosGanados', () => {
 
     const promedio = data.length >0 ? sumatoria/data.length : 0;
     expect (datos).toEqual(promedio);
+  });
+});
+
+describe('calcularEstadisticasIngresosPorGenero', () => {
+  it('debería calcular correctamente las estadísticas de ingresos por género', () => {
+    const data = [
+      { genero: 'Acción', ingresos: 100 },
+      { genero: 'Acción', ingresos: 200 },
+      { genero: 'Drama', ingresos: 150 },
+      { genero: 'Drama', ingresos: 250 },
+    ];
+
+    const resultadoEsperado = {
+      'Acción': {
+        cantidadPeliculas: 2,
+        totalIngresos: 300,
+        ingresoPromedio: 150,
+      },
+      'Drama': {
+        cantidadPeliculas: 2,
+        totalIngresos: 400,
+        ingresoPromedio: 200,
+      },
+    };
+
+    expect(calcularEstadisticasIngresosPorGenero(data)).toEqual(resultadoEsperado);
+  });
+
+  it('debería devolver un objeto vacío si se proporciona un array vacío', () => {
+    expect(calcularEstadisticasIngresosPorGenero([])).toEqual({});
   });
 });
